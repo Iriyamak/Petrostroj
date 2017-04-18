@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
     <title>ООО “Петрострой Инжиниринг”</title>
   </head>
   <body>
@@ -35,11 +37,16 @@
       </div>
     </header>
     <main>
-      <div class="slider">
+      <div class="my-slider">
         <ul>
-          <li><p>Продажа котельного оборудования и режимная наладка работы котельных</p></li>
-          <li><p>Технический надзор при строительстве систем газораспределения и газопотребления</p></li>
-          <li><p>Проектирование, строительство, наладка, эксплуатация и техническое обслуживание котельных, газопроводов, индивидуальных тепловых пунктов, инфракрасных излучателей, систем вентиляции </p></li>
+          <li>
+            <img src="img/slide1.jpg" alt="">
+            <p>Продажа котельного оборудования и режимная наладка работы котельных</p></li>
+          <li>
+            <img src="img/slide2.jpg" alt="">
+            <p>Технический надзор при строительстве систем газораспределения и газопотребления</p></li>
+          <li>
+            <img src="img/slide3.jpg" alt=""><p>Проектирование, строительство, наладка, эксплуатация и техническое обслуживание котельных, газопроводов, индивидуальных тепловых пунктов, инфракрасных излучателей, систем вентиляции </p></li>
         </ul>
       </div>
       <div class="centerfix">
@@ -140,5 +147,15 @@
         <span>Разработано в <img src="img/rossite-logo.png" alt=""></span>
       </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script><!--подключение библиотеки-->
+    <script src="js/unslider-min.js"></script><!-- подключение файл самого плагина-->
+    <!--вызов плагина с автоматическим переключением слайдов-->
+    <script>
+      jQuery(document).ready(function($) {
+        $('.my-slider').unslider({
+          autoplay: true
+        });
+      });
+    </script>
   </body>
 </html>
