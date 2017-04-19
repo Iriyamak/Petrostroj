@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
@@ -41,12 +41,16 @@
         <ul>
           <li>
             <img src="img/slide1.jpg" alt="">
-            <p>Продажа котельного оборудования и режимная наладка работы котельных</p></li>
+            <p>Продажа котельного оборудования и режимная наладка работы котельных</p>
+          </li>
           <li>
             <img src="img/slide2.jpg" alt="">
-            <p>Технический надзор при строительстве систем газораспределения и газопотребления</p></li>
+            <p>Технический надзор при строительстве систем газораспределения и газопотребления</p>
+          </li>
           <li>
-            <img src="img/slide3.jpg" alt=""><p>Проектирование, строительство, наладка, эксплуатация и техническое обслуживание котельных, газопроводов, индивидуальных тепловых пунктов, инфракрасных излучателей, систем вентиляции </p></li>
+            <img src="img/slide3.jpg" alt="">
+            <p>Проектирование, строительство, наладка, эксплуатация и техническое обслуживание котельных, газопроводов, индивидуальных тепловых пунктов, инфракрасных излучателей, систем вентиляции </p>
+          </li>
         </ul>
       </div>
       <div class="centerfix">
@@ -143,8 +147,10 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <span><i class="fa fa-copyright"></i>ООО “Петрострой Инжиниринг” 2017. Все права защищены.</span>
-        <span>Разработано в <img src="img/rossite-logo.png" alt=""></span>
+        <div class="centerfix">
+          <span><i class="fa fa-copyright"></i>ООО “Петрострой Инжиниринг” 2017. Все права защищены.</span>
+          <span>Разработано в <img src="img/rossite-logo.png" alt=""></span>
+        </div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!--подключение библиотеки-->
@@ -153,7 +159,10 @@
     <script>
       jQuery(document).ready(function($) {
         $('.my-slider').unslider({
-          autoplay: true
+          animation: 'vertical',
+          autoplay: true,
+          infinite: true,
+          arrows: false
         });
       });
     </script>
