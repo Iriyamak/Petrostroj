@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -10,31 +10,33 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
-    <title>ООО “Петрострой Инжиниринг”</title>
+    <title>Петрострой Инжиниринг</title>
   </head>
   <body>
     <header>
-      <div class="top-header">
+      <div class="header-top">
         <div class="centerfix">
-          <div class="top-header-adress"><i class="fa fa-home"></i>Санкт- Петербург, ул. Ватутина, д.24</div>
-          <div class="top-header-contact">
-            <a class="top-header-contact-mail" href="#"><i class="fa fa-envelope-o"></i> petrovme@mail.ru</a>
-            <span class="top-header-contact-phone"><i class="fa fa-phone"></i> 8 921 995 56 02</span>
+          <div class="header-top-adress"><i class="fa fa-home"></i>Санкт- Петербург, ул. Ватутина, д.24</div>
+          <div class="header-top-contact">
+            <a class="header-top-contact-mail" href="mailto:petrovme@mail.ru"><i class="fa fa-envelope-o"></i> petrovme@mail.ru</a>
+            <a class="header-top-contact-phone" href="tel:+79219955602"><i class="fa fa-phone"></i> 8 921 995 56 02</a>
           </div>
         </div>
       </div>
-      <div class="centerfix">
-        <nav class="main-menu">
-          <a class="main-menu-logo" href="#"><img src="img/logo.png" alt="Petrostroj logo"></a>
-          <ul>
-            <li><a href="#">Проектирование</a></li>
-            <li><a href="#">Строительство</a></li>
-            <li><a href="#">Пуско-наладка</a></li>
-            <li><a href="#">Техническое обслуживание</a></li>
-            <li><a href="#">Инжиниринговые услуги</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="header-fixed">
+        <div class="centerfix">
+          <nav class="main-menu">
+            <a class="main-menu-logo" href="#"><img src="img/logo.png" alt="Petrostroj logo"></a>
+            <ul>
+              <li><a href="projection.html">Проектирование</a></li>
+              <li><a href="construction.html">Строительство</a></li>
+              <li><a href="commissioning.html">Пуско-наладка</a></li>
+              <li><a href="service.html">Техническое обслуживание</a></li>
+              <li><a href="engineering.html">Инжиниринговые услуги</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -56,27 +58,38 @@
       </div>
       <div class="centerfix">
         <div class="section-title">
-          <h2>услуги</h2>
+          <h2><span>услуги</span></h2>
         </div>
         <div class="services">
-          <div class="service-item">
-            <img src="img/service1.jpg" alt="">
-            <p>Проектирование</p></div>
-          <div class="service-item">
-            <img src="img/service2.jpg" alt="">
-            <p>Строительство, <br>монтаж</p></div>
-          <div class="service-item">
-            <img src="img/service3.jpg" alt="">
-            <p>Пуско-наладка</p></div>
-          <div class="service-item">
-            <img src="img/service4.jpg" alt="">
-            <p>Техническая эксплуатация, <br>обслуживание</p></div>
-          <div class="service-item">
-            <img src="img/service5.jpg" alt="">
-            <p>Инжиниринговые услуги</p></div>
+          <div class="services-item">
+            <a href="projection.html"><img src="img/service1.jpg" alt=""></a>
+            <a href="projection.html"><p>Проектирование</p></a>
+
+          </div>
+          <div class="services-item">
+            <a href="construction.html"><img src="img/service2.jpg" alt=""></a>
+            <a href="construction.html"><p>Строительство, <br>монтаж</p></a>
+            </a>
+          </div>
+          <div class="services-item">
+            <a href="commissioning.html"><img src="img/service3.jpg" alt=""></a>
+            <a href="commissioning.html"><p>Пуско-наладка</p></a>
+            </a>
+          </div>
+          <div class="services-item">
+            <a href="service.html"><img src="img/service4.jpg" alt=""></a>
+            <a href="service.html"><p>Техническая эксплуатация,<br>
+              обслуживание</p></a>
+            </a>
+          </div>
+          <div class="services-item">
+            <a href="engineering.html"><img src="img/service5.jpg" alt=""></a>
+            <a href="engineering.html"><p>Инжиниринговые услуги</p></a>
+            </a>
+          </div>
         </div>
         <div class="section-title">
-          <h2>о компании</h2>
+          <h2><span>о компании</span></h2>
         </div>
         <div class="about">
           <div class="about-description">
@@ -92,80 +105,95 @@
             <li><i class="fa fa-check"></i>Гибкие сроки выполнения работ;</li>
           </ul>
         </div>
-        <div class="feature-title">
+        <div class="features-title">
           <h3>Наши преимущества</h3>
         </div>
         <div class="features">
-          <div class="feature-item">
-            <div class="feature-img">
+          <div class="features-item">
+            <div class="features-img">
               <img src="img/feature1.png" alt="">
             </div>
             <p>Услуги "под ключ" от проектирования до принятия объекта в эксплуатацию</p>
           </div>
-          <div class="feature-item">
-            <div class="feature-img">
+          <div class="features-item">
+            <div class="features-img">
               <img src="img/feature2.png" alt="">
             </div>
             <p>Сроки выполнения работ соответствуют установленным срокам договора</p>
           </div>
-          <div class="feature-item">
-            <div class="feature-img">
+          <div class="features-item">
+            <div class="features-img">
               <img src="img/feature3.png" alt="">
             </div>
             <p>Сопровождение Заказчика <br>на всех этапах сотрудничества</p>
           </div>
         </div>
       </div>
-        <div class="banner">
-          <h3>Предоставление комплекса услуг "под ключ"</h3>
-          <p>от проектирования до принятия смонтированного объекта в эксплуатацию.</p>
+        <div class="banner" data-parallax="scroll" data-image-src="img/banner.jpg">
+            <h3>Предоставление комплекса услуг "под ключ"</h3>
+            <p>от проектирования до принятия смонтированного объекта в эксплуатацию.</p>
+          </div>
         </div>
     </main>
     <footer>
       <div class="centerfix">
         <div class="footer-about">
-          <h4>ООО “Петрострой Инжиниринг”</h4>
+          <h4><a href="index.html">ООО “Петрострой Инжиниринг”</a></h4>
           <p>Проектирование, монтаж, наладка, эксплуатация и техническое обслуживание котельных, газопроводов, индивидуальных тепловых пунктов, инфракрасных излучателей, систем вентиляции.</p>
         </div>
         <div class="footer-contacts">
           <h4>Контактная информация</h4>
-          <p><i class="fa fa-phone"></i>8 (921) 418-86-28 <br>
-            <i class="fa fa-envelope-o"></i>petrovme@mail.ru <br>
+          <p>
+            <i class="fa fa-phone"></i><a href="tel:+79219955602">8 (921) 418-86-28</a> <br>
+            <i class="fa fa-envelope-o"></i><a href="mailto:petrovme@mail.ru">petrovme@mail.ru</a>
+            <br>
             <i class="fa fa-clock-o"></i>Пн-Пт: с 09.00 до 18.00, <br>
-              Сб-Вс: выходной. <br>
+            <i class="fa"></i>  Сб-Вс: выходной. <br>
             <i class="fa fa-map-marker"></i>г. СПб, ул. Ватутина, д.24
            </p>
         </div>
         <div class="footer-menu">
           <h4>услуги</h4>
           <ul>
-            <li><a href="">Проектирование</a></li>
-            <li><a href="">Строительство </a></li>
-            <li><a href="">Пуско-наладка </a></li>
-            <li><a href="">Техническое обслуживание</a></li>
-            <li><a href="">Инжиниринговые услуги</a></li>
+            <li><a href="projection.html">Проектирование</a></li>
+            <li><a href="construction.html">Строительство </a></li>
+            <li><a href="commissioning.html">Пуско-наладка </a></li>
+            <li><a href="service.html">Техническое обслуживание</a></li>
+            <li><a href="engineering.html">Инжиниринговые услуги</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="centerfix">
           <span><i class="fa fa-copyright"></i>ООО “Петрострой Инжиниринг” 2017. Все права защищены.</span>
-          <span>Разработано в <img src="img/rossite-logo.png" alt=""></span>
+          <span>Разработано в <a href="http://rosait.ru/" target="blank"><img src="img/rossite-logo.png" alt="Россайт"></a></span>
+          <span>выполнено<a href="http://iriyamak.github.io/" target="blank"><img src="img/my-logo.png" alt="Макарова Ирина"></a></span>
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!--подключение библиотеки-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/unslider-min.js"></script><!-- подключение файл самого плагина-->
     <!--вызов плагина с автоматическим переключением слайдов-->
     <script>
       jQuery(document).ready(function($) {
         $('.my-slider').unslider({
-          animation: 'vertical',
           autoplay: true,
           infinite: true,
           arrows: false
         });
       });
     </script>
+    <script type="text/javascript">
+      var NavTop = $('.header-fixed').offset().top;
+      $(window).scroll(function(){
+      if( $(window).scrollTop() > NavTop ) {
+      $('.header-fixed').css({position: 'fixed', top: '0px'});
+      } else {
+      $('.header-fixed').css({position: 'static'});
+      }
+      });
+    </script>
+
   </body>
 </html>
